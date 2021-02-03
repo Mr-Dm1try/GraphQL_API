@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.Server\GraphQL_API.Server.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HotChocolate.AspNetCore" Version="10.4.3" />
+    <PackageReference Include="HotChocolate.AspNetCore.GraphiQL" Version="10.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQL_API.DatabaseHelper\GraphQL_API.DatabaseHelper.csproj" />
+  </ItemGroup>
+
+
+</Project>

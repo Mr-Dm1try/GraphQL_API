@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GraphQL_API.Server</name>
+    </assembly>
+    <members>
+        <member name="T:GraphQL_API.Server.DataModel.Account">
+            <summary>
+            Лицевой счет абонента
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Account.Number">
+            <summary>
+            Номер ЛС
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Account.Balance">
+            <summary>
+            Баланс на ЛС
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Account.CreationDate">
+            <summary>
+            Дата создания ЛС
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Account.Devices">
+            <summary>
+            Список приложений абонента
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Account.ContractNumber">
+            <summary>
+            Номер контракта
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.Contract">
+            <summary>
+            Заключенный с абонентом контракт
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Contract.Number">
+            <summary>
+            Номер контракта
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Contract.CreationDate">
+            <summary>
+            Дата создания контракта
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Contract.Accounts">
+            <summary>
+            Лицевые счета на контракте
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Contract.SubscriberId">
+            <summary>
+            Идентификатор абонента
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.Entity">
+            <summary>
+            Сущность
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Entity.Id">
+            <summary>
+            Идентификатор сущности
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.LegalPerson">
+            <summary>
+            Абонент - Юридическое лицо
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.LegalPerson.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.LegalPerson.OrganizationForm">
+            <summary>
+            Форма организации
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.LegalPerson.ContactDetails">
+            <summary>
+            Словарь контактных данных (тип, значение)
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.LegalPerson.Contracts">
+            <summary>
+            Заключенные контракты абонента
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.PhysicalPerson">
+            <summary>
+            Абонент - Физическое лицо
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.PhysicalPerson.Surname">
+            <summary>
+            Фамилия
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.PhysicalPerson.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.PhysicalPerson.MiddleName">
+            <summary>
+            Отчество
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.PhysicalPerson.ContactDetails">
+            <summary>
+            Словарь контактных данных (тип, значение)
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.PhysicalPerson.Contracts">
+            <summary>
+            Заключенные контракты абонента
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.Subscriber">
+            <summary>
+            Абонент
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Subscriber.ContactDetails">
+            <summary>
+            Словарь контактных данных (тип, значение)
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.Subscriber.Contracts">
+            <summary>
+            Заключенные контракты абонента
+            </summary>
+        </member>
+        <member name="T:GraphQL_API.Server.DataModel.SubscriberDevice">
+            <summary>
+            Приложение абонента
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.SubscriberDevice.Number">
+            <summary>
+            Номер
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.SubscriberDevice.CreationDate">
+            <summary>
+            Дата создания
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.SubscriberDevice.TariffPlan">
+            <summary>
+            Тарифный план
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.SubscriberDevice.IMSI">
+            <summary>
+            Международный идентификатор мобильного абонента
+            </summary>
+        </member>
+        <member name="P:GraphQL_API.Server.DataModel.SubscriberDevice.AccountNumber">
+            <summary>
+            Номер ЛС
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetSubscribersByIds(HotChocolate.Resolvers.IResolverContext,System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Получить абонентов по ИД
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetAllSubscribers(HotChocolate.Resolvers.IResolverContext)">
+            <summary>
+            Получить всех абонентов
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetContractsByIds(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Получить контракты по ИД
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetContractsByNumbers(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Получить контракты по номерам
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetAccountsByIds(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Получить лицевые счета по ИД
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetAccountsByNumbers(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            Получить лицевые счета по номерам
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetDevicesByIds(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Получить приложения абонентов по ИД
+            </summary>
+        </member>
+        <member name="M:GraphQL_API.Server.Schema.Query.GetDevicesByNumbers(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Получить приложения абонентов по ИД
+            </summary>
+        </member>
+    </members>
+</doc>

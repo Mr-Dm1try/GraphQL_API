@@ -1,0 +1,9 @@
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\bin\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.deps.json
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\bin\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.dll
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.csprojAssemblyReference.cache
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.AssemblyInfoInputs.cache
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.AssemblyInfo.cs
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\bin\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.pdb
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.csproj.CoreCompileInputs.cache
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.dll
+C:\Users\mrdmi\Google Диск\Учеба\Диплом\GraphQL_API\GraphQL_API.DatabaseHelper\obj\Debug\netstandard2.1\GraphQL_API.DatabaseHelper.pdb

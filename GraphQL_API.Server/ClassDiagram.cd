@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GraphQL_API.Server.DataModel.Account">
+    <Position X="79.5" Y="20.25" Width="1.75" />
+    <AssociationLine Name="Devices" Type="GraphQL_API.Server.DataModel.SubscriberDevice" FixedFromPoint="true">
+      <Path>
+        <Point X="81.25" Y="21" />
+        <Point X="82.25" Y="21" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAEgAAAAAQAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataModel\Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Devices" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GraphQL_API.Server.DataModel.Entity">
+    <Position X="78" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataModel\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphQL_API.Server.DataModel.LegalPerson">
+    <Position X="74" Y="20.5" Width="1.5" />
+    <InheritanceLine Type="GraphQL_API.Server.DataModel.Entity" ManuallyRouted="true">
+      <Path>
+        <Point X="78.75" Y="18.603" />
+        <Point X="78.75" Y="20.125" />
+        <Point X="75.763" Y="20.125" Type="JumpStart" />
+        <Point X="75.596" Y="20.125" Type="JumpEnd" />
+        <Point X="74.75" Y="20.125" />
+        <Point X="74.75" Y="20.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Contracts" Type="GraphQL_API.Server.DataModel.Contract" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="75.5" Y="21.559" />
+        <Point X="75.68" Y="21.559" />
+        <Point X="75.68" Y="21" />
+        <Point X="77" Y="21" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAQIAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>DataModel\LegalPerson.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Contracts" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Orientation="Right" Position="1.252" />
+  </Class>
+  <Class Name="GraphQL_API.Server.DataModel.PhysicalPerson">
+    <Position X="74" Y="17.5" Width="1.5" />
+    <InheritanceLine Type="GraphQL_API.Server.DataModel.Entity" ManuallyRouted="true">
+      <Path>
+        <Point X="78.75" Y="18.603" />
+        <Point X="78.75" Y="20.125" />
+        <Point X="75.763" Y="20.125" Type="JumpStart" />
+        <Point X="75.596" Y="20.125" Type="JumpEnd" />
+        <Point X="74.75" Y="20.125" />
+        <Point X="74.75" Y="19.31" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="Contracts" Type="GraphQL_API.Server.DataModel.Contract" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="75.312" Y="19.31" />
+        <Point X="75.68" Y="19.31" />
+        <Point X="75.68" Y="21" />
+        <Point X="77" Y="21" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAASAAQABAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>DataModel\PhysicalPerson.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Contracts" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Orientation="Right" Position="1.436" />
+  </Class>
+  <Class Name="GraphQL_API.Server.DataModel.SubscriberDevice">
+    <Position X="82.25" Y="20" Width="1.5" />
+    <InheritanceLine Type="GraphQL_API.Server.DataModel.Entity" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="78.75" Y="18.603" />
+        <Point X="78.75" Y="20.125" />
+        <Point X="82.25" Y="20.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAEAAAAAAAAEAAAAAAAAgAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataModel\SubscriberDevice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphQL_API.Server.Schema.Query">
+    <Position X="80" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAIAAAAACAAAAAIEAAAAAgAAAAAAAAACABAA=</HashCode>
+      <FileName>Schema\Query.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GraphQL_API.Server.DataModel.Contract">
+    <Position X="77" Y="20.5" Width="1.5" />
+    <AssociationLine Name="Accounts" Type="GraphQL_API.Server.DataModel.Account" FixedFromPoint="true">
+      <Path>
+        <Point X="78.5" Y="21" />
+        <Point X="79.5" Y="21" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAQAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DataModel\Contract.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Accounts" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="GraphQL_API.Server.DataModel.Subscriber">
+    <Position X="76" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>DataModel\Subscriber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
